@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#btn{
+background-color:lightblue;
+padding:8px 10px;
+margin:25px;
+border:none;
+border-radius:8px;
+color:white;
+}
+</style>
+
+</head>
+<body>
+
+<button id="btn">Hover me!</button>
+
+
+<script>
+let button=document.getElementById("btn");
+button.addEventListener("mouseover", ()=>{
+button.style.backgroundColor="blue";
+})
+
+button.addEventListener("mouseout", ()=>{
+button.style.backgroundColor="black";
+})
+
+button.addEventListener("mouseeneter", ()=>{
+button.style.backgroundColor="orange";
+})
+
+button.addEventListener("mouseleave", ()=>{
+button.style.backgroundColor="purple";
+})
+
+button.addEventListener("click", ()=>{
+button.style.backgroundColor="green";
+})
+
+button.addEventListener("dblclick", ()=>{
+button.style.backgroundColor="pink";
+})
+
+
+button.addEventListener("contextmenu", ()=>{
+button.style.backgroundColor="red";
+})
+
+
+</script>
+
+</body>
+</html>
